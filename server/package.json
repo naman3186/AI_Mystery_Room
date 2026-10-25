@@ -1,0 +1,15 @@
+{
+  "name": "ai-mystery-room-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch-path=src src/server.js",
+    "start": "node src/server.js",
+    "check": "node --check src/server.js && node --check src/app.js && node --check src/routes/caseRoutes.js && node --check src/models/Case.js && node --check src/services/caseService.js && node --check src/services/geminiService.js && node --check src/validators/caseSchemas.js && node --check src/config/difficulty.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@google/genai": "^1.11.0", "cors": "^2.8.5", "dotenv": "^16.4.7", "express": "^4.21.2", "express-rate-limit": "^7.5.0", "mongoose": "^8.12.1", "zod": "^3.24.2"
+  }
+}

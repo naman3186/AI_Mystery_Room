@@ -1,0 +1,1 @@
+export default { content: ['./index.html', './src/**/*.{js,jsx}'], theme: { extend: { colors: { ink: '#11120f', paper: '#e9e8dc', evidence: '#c7d36f' }, fontFamily: { mono: ['DM Mono', 'monospace'], serif: ['Playfair Display', 'Georgia', 'serif'] } } }, plugins: [] };
